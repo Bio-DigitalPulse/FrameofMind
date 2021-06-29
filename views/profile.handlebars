@@ -1,0 +1,41 @@
+<div class="post-card">
+  <div class="card-header">
+    <h2>Welcome, {{user.name}}!</h2>
+  </div>
+
+    <h3>Create a New Blog:</h3>
+
+    <form id="new-blog-form" class="card-body">
+
+
+        <label class="form-label" for="blog-name">Blog title:</label>
+        <input class="form-input" type="text" id="blog-name" name="blog-name" />
+
+
+        <label for="blog-desc" for="blog-body">Your thoughts:</label>
+        <textarea class="form-input" id="blog-desc" name="blog-desc"></textarea>
+
+        <button type="submit" class="btn">Save Blog Post</button>
+
+    </form>
+  </div>
+
+  {{#if blogs.length}}
+  <div class="col-md-6 blog-list">
+    <h3>Previous Blogs:</h3>
+
+    {{#each blogs as |blog|}}
+    <div class="row mb-2">
+      <div class="col-md-8">
+        <h4><a href="/blog/{{blog.id}}">{{blog.name}}</a></h4>
+      </div>
+      <div class="col-md-4">
+        <button class="btn btn-sm btn-danger" data-id="{{blog.id}}">DELETE</button>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  {{/if}}
+</div>
+
+<script src="./js/profile.js"></script>

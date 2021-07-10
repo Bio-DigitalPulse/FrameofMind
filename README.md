@@ -37,5 +37,7 @@ WHEN I am idle on the site for more than a set time
 THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments
 
 To view the Github repository this code is deployed at, follow this link:
+https://github.com/Bio-DigitalPulse/FrameofMind.git
 
-To view the URL this application can be located at, follow this link:
+To view the Heroku URL this application can be located at, follow this link:
+

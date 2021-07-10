@@ -1,31 +1,27 @@
+
+
 <section>
-
-  <div class="hdbs">
+  <div class="hdbs" id='signup'>
     <h2>Signup</h2>
+
+    <form class="form signup-form" id="signup-form">
+
+      <div class="form-group">
+        <label for="name-signup">New Username:</label>
+        <input class="form-input" type="text" id="name-signup" placeholder="Username..." />
+      </div>
+
+      <div class="form-group">
+        <label for="password-signup">New Password:</label>
+        <input class="form-input" type="password" id="password-signup" placeholder="Password..."/>
+      </div>
+
+      <div class="form-group">
+        <button class="btn" id="signup-btn" type="submit">Submit</button>
+        </div>
+
+    </form>
   </div>
-
-    <div class="signup" role="tabpanel">
-      <form class="hdbs" id="signup-form">
-
-      <div>
-        <label 
-        for="name-signup">Username:</label>
-        <input type="text" id="name-signup" />
-      </div>
-
-      <div>
-        <label 
-        for="password-signup">Password:</label>
-        <input type="password" id="password-signup" />
-      </div>
-
-      
-        <button class="btn btn-reverse" id="signup-btn" type="submit">Signup</button>
-        <a href="/login">Login instead</a>
-
-      </form>
-    </div>
 </section>
-
 
 <script src="./js/signup.js"></script>

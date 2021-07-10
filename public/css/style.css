@@ -110,7 +110,7 @@ header.inner {
 /* Home Search */
 
 .image {
-  height: 690px;
+  height: 100%;
   width: 100%;
   padding: 1.3rem 3rem;
   display: flex;
@@ -148,7 +148,7 @@ header.inner {
   color: #333;
 }
 
-/* Everything in the search form */
+
 .search-form>* {
   border: 0;
   padding: 0 0 0 10px;
@@ -157,6 +157,10 @@ header.inner {
   font-size: 1rem;
   border-radius: 0;
   outline: 0;
+}
+
+.footer a{
+  color: grey,
 }
 
 input[type='search'] {

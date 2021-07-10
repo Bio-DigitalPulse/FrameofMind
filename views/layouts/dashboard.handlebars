@@ -22,24 +22,29 @@
   </head>
 
   <body>
-
     <header class='inner'>
-      <h2><i class='fas fa-chalkboard'></i><a href='/'>
-          FrameOfMind</a></h2>
+      <h1><a href='/dashboard'>Your Dashboard</a></h1>
       <nav>
-        <a class='btn' href='./login' role='button' id='login'>Login</a>
-        <a class='btn' href='./signup' role='button' id='signup'>Signup</a>
+        <ul>
+          <li>
+            <a class='btn' href='#' role='button' id='logout-link'>Logout</a>
+          </li>
+        </ul>
       </nav>
+
     </header>
 
     <div class='image col-auto'>
-      <main class=' container'>
+      <main class='container'>
         {{{body}}}
       </main>
     </div>
 
-    {{!-- <script src='/js/logout.js'></script> --}}
-    {{!-- <script src='/js/signup.js'></script> --}}
+    <footer class='footer flex-row justify-center'>
+      <a  href='/dashboard/new'>➕</a>
+    </footer>
   </body>
+
+  <script src='/js/logout.js'></script>
 
 </html>

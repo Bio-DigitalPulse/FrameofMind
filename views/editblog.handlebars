@@ -1,15 +1,15 @@
 <section>
-  <div class="hdbs">
+  <div class="hdbs blogs">
     <h2>Edit Blog</h2>
   </div>
   <form id="edit-blog-form" class="card-body">
-    <input type="hidden" name="blog-id" value="{{blog.id}}" />
+    <input type="hidden" name="blog-id" value="{{blogs.id}}" />
 
     <label class="form-label" for="blog-title">Title</label>
-    <input type="text" name="blog-title" value="{{blog.title}}" class="form-input" />
+    <input type="text" name="blog-title" value="{{blogs.title}}" class="form-input" />
 
     <label class="form-label" for="blog-body">Content</label>
-    <textarea name="blog-body" class="form-input">{{blog.body}}</textarea>
+    <textarea name="blog-body" class="form-input">{{blogs.body}}</textarea>
 
     <button type="submit" class="btn">Update</button>
 
@@ -17,4 +17,4 @@
   </form>
 </section>
 
-<script src="/js/edit.js"></script>
+<script src="./js/edit.js"></script>

@@ -1,27 +1,27 @@
-<div class='hdbs'>
+<div class='hdbs' id='singleblog'>
   <article class='card'>
     <div class='card-header flex-row justify-space-between'>
-      <h2>{{blog.title}}</h2>
+      <h2>{{blogs.title}}</h2>
       <div>
-        bloged by
-        {{blog.User.name}}
+        blogsed by
+        {{blogs.User.username}}
         on
-        {{format_date blog.createdAt}}
+        {{format_date blogs.createdAt}}
       </div>
     </div>
     <div class='card-body'>
-      {{blog.body}}
+      {{blogs.body}}
     </div>
   </article>
 
-  {{#if blog.Comments}}
-    <section class='card'>
+  {{#if blogs.Comments}}
+    <section class='hdbs'>
       <div class='card-header'>
         <h3>Comments</h3>
       </div>
 
       <div class='card-body'>
-        {{#each blog.Comments}}
+        {{#each blogs.Comments}}
           <div>
             <p>
               {{body}}
@@ -37,13 +37,13 @@
     </section>
   {{/if}}
 
-  <form id='new-comment-form' class='card'>
+  <form id='new-comment-form' class='hdbs'>
     <div class='card-header'>
       <h3>Add New Comment</h3>
     </div>
 
     <div class='card-body'>
-      <input type='hidden' name='blog-id' value='{{blog.id}}' />
+      <input type='hidden' name='blogs-id' value='{{blogs.id}}' />
 
       <label class='form-label' for='comment-body'>Comment</label>
 
@@ -54,4 +54,4 @@
   </form>
 </div>
 
-<script src='/js/comment.js'></script>
+<script src='./js/comment.js'></script>

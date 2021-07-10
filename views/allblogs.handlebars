@@ -1,8 +1,20 @@
-<div class="hdbs list-group">
+
+<section>
+<div class="blogs hdbs">
   {{#each blogs}}
-    <a class="list-item flex-row justify-space-between" href="/dashboard/edit/{{id}}">
-      <span>{{title}}</span>
-      <span>{{format_date createdAt}}</span>
-    </a>
+  <article>
+    <div class="card-header flex-row justify-space-between">
+      <h2>
+        <a href="/blogs/{{id}}">{{title}}</a>
+      </h2>
+      <div>
+        Blogged by {{User.username}} on {{format_date createdAt}}
+      </div>
+    </div>
+    <div class="card-body hdbs">
+      {{body}}
+    </div>
+  </article>
   {{/each}}
 </div>
+</section>

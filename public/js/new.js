@@ -4,7 +4,7 @@ const newFormHandler = async function (event) {
   const title = document.querySelector('input[name="blog-title"]').value;
   const body = document.querySelector('textarea[name="blog-body"]').value;
 
-  await fetch(`/api/blog`, {
+  await fetch(`/api/blogs`, {
     method: 'POST',
     body: JSON.stringify({
       title,
@@ -15,7 +15,7 @@ const newFormHandler = async function (event) {
     },
   });
 
-  document.location.replace('/homepage');
+  document.location.replace('/dashboard');
 };
 
 document

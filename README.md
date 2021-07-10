@@ -40,4 +40,4 @@ To view the Github repository this code is deployed at, follow this link:
 https://github.com/Bio-DigitalPulse/FrameofMind.git
 
 To view the Heroku URL this application can be located at, follow this link:
-
+https://pacific-depths-44326.herokuapp.com/
